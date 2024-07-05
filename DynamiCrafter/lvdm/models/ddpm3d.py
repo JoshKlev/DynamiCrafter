@@ -20,13 +20,13 @@ from torch.optim.lr_scheduler import LambdaLR, CosineAnnealingLR
 from torchvision.utils import make_grid
 import pytorch_lightning as pl
 from pytorch_lightning.utilities import rank_zero_only
-from utils.utils import instantiate_from_config
-from lvdm.ema import LitEma
-from lvdm.models.samplers.ddim import DDIMSampler
-from lvdm.distributions import DiagonalGaussianDistribution
-from lvdm.models.utils_diffusion import make_beta_schedule, rescale_zero_terminal_snr
-from lvdm.basics import disabled_train
-from lvdm.common import (
+from DynamiCrafter.utils.utils import instantiate_from_config
+from DynamiCrafter.lvdm.ema import LitEma
+from DynamiCrafter.lvdm.models.samplers.ddim import DDIMSampler
+from DynamiCrafter.lvdm.distributions import DiagonalGaussianDistribution
+from DynamiCrafter.lvdm.models.utils_diffusion import make_beta_schedule, rescale_zero_terminal_snr
+from DynamiCrafter.lvdm.basics import disabled_train
+from DynamiCrafter.lvdm.common import (
     extract_into_tensor,
     noise_like,
     exists,
