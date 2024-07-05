@@ -4,9 +4,9 @@ import torch
 import torch.nn as nn
 from einops import rearrange
 import torch.nn.functional as F
-from lvdm.models.utils_diffusion import timestep_embedding
-from lvdm.common import checkpoint
-from lvdm.basics import (
+from DynamiCrafter.lvdm.models.utils_diffusion import timestep_embedding
+from DynamiCrafter.lvdm.common import checkpoint
+from DynamiCrafter.lvdm.basics import (
     zero_module,
     conv_nd,
     linear,
