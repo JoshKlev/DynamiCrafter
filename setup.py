@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='DynamiCrafter',
     version='1.0',
-    packages=find_packages(include=['lvdm', 'main', 'assets', 'configs', 'prompts', 'results', 'checkpoints']),
+    packages=find_packages(include=['DynamiCrafter', 'DynamiCrafter.*']),
     install_requires=[
     ],
     author='',
