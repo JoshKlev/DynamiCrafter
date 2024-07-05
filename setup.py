@@ -2,13 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name='DynamiCrafter',
-    version='1.0',
-    packages=find_packages(include=['DynamiCrafter', 'DynamiCrafter.*']),
+    version='0.1',
+    package_dir={'': '.'},
+    packages=find_packages(include=['lvdm', 'lvdm.*', 'main', 'main.*', 'assets', 'configs', 'prompts', 'scripts', 'scripts.*', 'utils', 'utils.*']),
     install_requires=[
+        # List your project's dependencies here.
+        # For example: 'requests', 'numpy'
     ],
-    author='',
-    author_email='',
-    description='',
+    author='Your Name',
+    author_email='your.email@example.com',
+    description='A short description of your project',
     url='https://github.com/JoshKlev/DynamiCrafter',
     classifiers=[
         'Development Status :: 3 - Alpha',
