@@ -4,7 +4,7 @@ setup(
     name='DynamiCrafter',
     version='0.1',
     package_dir={'': '.'},
-    packages=find_packages(),
+    packages=["lvdm"],
     install_requires=[
         # List your project's dependencies here.
         # For example: 'requests', 'numpy'
